@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>兼容性好的getElementByClassName函数</title>
+</head>
+
+<body>
+	<div class="ab">
+		<p class="aa">
+			<span class="aaa"></span>
+		</p>
+		<span class="dd"></span>
+	</div>
+	<p></p>
+	<h1 class="ee"></h1>
+	<script>
+		Document.prototype.getElementsByClassName = function (className) {
+			var allDomArr = Array.prototype.slice.call(document.getElementsByTagName('*'), 0);
+			var filterClass = [];
+			function dealClass(dom) {
+				var reg = /\s+/g;//匹配多个空格
+				var arrClassName = dom.className.replace(reg, ' ').trim();//一个空格替换多个空格，去掉前后的空格
+				return arrClassName;
+			}
+			allDomArr.forEach(function (ele, index) {
+				var itemClass = dealClass(ele).split(' ');
+				for (i = 0; i < itemClass.length; i++) {
+					if (itemClass[i] == className) {
+						filterClass.push(ele);
+						break;
+					}
+				}
+			})
+			return filterClass;
+		}
+		var oclass = document.getByClassName('aa');
+		console.log(oclass);
+	</script>
+</body>
+
+</html>

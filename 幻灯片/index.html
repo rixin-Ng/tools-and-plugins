@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .wrap{
+            width: 100%;
+            height: 100%;  
+        }
+        img{
+            width:100%;
+            height: auto;
+
+        }
+    </style>
+    <title>banner</title>
+</head>
+
+<body>
+    <div class="wrap"></div>
+
+
+    <script src="./index.js"></script>
+    <script>
+        bannerPlugin({
+            dom: document.getElementsByClassName('wrap')[0],
+            item: [{link:'https://www.baidu.com',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560950020394&di=1cd9f8dffdbbf9e5a2eaeb809a785fd4&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01084f5951fc51a8012193a3eddb28.jpg'},
+            {link:'https://www.baidu.com',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560950020392&di=822c3c3ef2f9629575e965649c86910d&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fdesign%2F00%2F84%2F52%2F70%2Fc92598082a6e2873aac3513f420af227.jpg'},
+            {link:'https://www.baidu.com',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561547502&di=afb7f5ec361246f1112c395dbd04aa24&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01f2ac576df0980000018c1b1cb5e1.jpg'}]
+        })
+
+
+    </script>
+</body>
+
+</html>

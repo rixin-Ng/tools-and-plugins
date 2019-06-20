@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.wrapper{
+	width: 80%;
+	min-width: 930px;
+	text-align: center;
+	margin: 0 auto;
+}
+ul{
+	display: inline-block;
+}
+li{
+	float: left;
+}
+.item{
+	width: 200px;
+	padding: 10px;
+	margin: 0 5px 10px 5px;
+	border:1px solid #ddd;
+}
+img{
+	width: 200px;
+	overflow: hidden;
+
+}
+.title{
+	text-align: left;
+}
+.loading{
+	color: #ccc;
+	font-size: 30px;
+	font-weight: 700;
+	display: none;
+}
