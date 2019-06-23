@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#inputWrap{
+	width: 470px;
+	height:34px;	
+	margin: 100px auto;
+}
+#inputWrap .inp{
+	width: 470px;
+	height: 34px;
+	position: relative;
+
+}
+#inputWrap .inp-btn{
+	position: absolute;
+	width: 37px;
+	height: 34px;
+}
+#inputWrap .inp .text{
+	float: left;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+	/*outline: none;*/
+}
+#inputWrap .inp-btn .btn{
+	background-color: #a0a89f;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid #ddd;
+}

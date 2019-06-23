@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>form</title>
+</head>
+
+<body>
+	<form action="#" method="get">
+		单行文本框：<input type="text" name="username" /><br />
+		文本域：<textarea rows="3" cols="2"></textarea><br />
+		不能编辑的文本框：<input type="text" name="name" readonly="readonly" /><br />
+		密码框：<input type="password" name="password" /><br />
+		隐藏域：<input type="hidden" name="hidden" /><br />
+		<label for="email">输入你的邮箱地址：</label>
+		<input type="email" id="email" placeholder="Enter email">
+		<br />
+		第一组单选框:<br />
+		<label for="male">男</label>
+		<input type="radio" name="gender" id="male" />
+		<br />
+		<label for="female">女</label>
+		<input type="radio" name="gender" id="female" />
+		<br />
+		两个复选框：<br />
+		<input type="checkbox" name="check" />
+		<input type="checkbox" name="check" />
+		<br />
+		列表框：
+		<select>
+			<option>上海</option>
+			<option>广州</option>
+			<option>深圳</option>
+		</select>
+		<br />
+		文件上传域：<input type="file" name="file" /><br />
+		图像域：<input type="image" src="#" alt="图片提示" name="img" width="100px" height="100px" /><br />
+		下面是四个按钮：<br />
+		<input type="submit" value="提交" />
+		<input type="submit" value="提交" disabled="disabled" />
+		<input type="reset" value="重置" />
+		<input type="button" value="无动作" />
+	</form>
+
+</body>
+
+</html>
